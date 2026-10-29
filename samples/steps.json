@@ -1,0 +1,12 @@
+{"steps": [
+  {"task_id": "add-pagination", "step": 1, "model": "claude-sonnet-4", "input_tokens": 4200, "output_tokens": 900, "latency_ms": 5200, "tool": "read_file"},
+  {"task_id": "add-pagination", "step": 2, "model": "claude-sonnet-4", "input_tokens": 6100, "output_tokens": 1400, "latency_ms": 8100, "tool": "edit_file"},
+  {"task_id": "add-pagination", "step": 3, "model": "claude-sonnet-4", "input_tokens": 7000, "output_tokens": 600, "latency_ms": 4300, "tool": "bash", "status": "failed", "retries": 2},
+  {"task_id": "add-pagination", "step": 4, "model": "claude-sonnet-4", "input_tokens": 7600, "output_tokens": 700, "latency_ms": 3900, "tool": "bash"},
+  {"task_id": "fix-timezone", "step": 1, "model": "claude-haiku-3.5", "input_tokens": 2500, "output_tokens": 500, "latency_ms": 1800, "tool": "read_file"},
+  {"task_id": "fix-timezone", "step": 2, "model": "claude-haiku-3.5", "input_tokens": 3100, "output_tokens": 800, "latency_ms": 2100, "tool": "edit_file"},
+  {"task_id": "fix-timezone", "step": 3, "model": "claude-haiku-3.5", "input_tokens": 3400, "output_tokens": 400, "latency_ms": 1500, "tool": "bash", "status": "failed"},
+  {"task_id": "idempotent-webhook", "step": 1, "model": "local-qwen", "input_tokens": 9000, "output_tokens": 2200, "latency_ms": 26000, "tool": "read_file"},
+  {"task_id": "idempotent-webhook", "step": 2, "model": "local-qwen", "input_tokens": 11500, "output_tokens": 3100, "latency_ms": 41000, "tool": "edit_file"},
+  {"task_id": "idempotent-webhook", "step": 3, "model": "local-qwen", "input_tokens": 14000, "output_tokens": 1200, "latency_ms": 22000, "tool": "bash"}
+]}
